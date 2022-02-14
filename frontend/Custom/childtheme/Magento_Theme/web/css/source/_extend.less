@@ -1,0 +1,40 @@
+/*define green color*/
+@theme-color-g: #008000;
+
+/*Primary btn bg green*/
+@button-primary__background: @theme-color-g;
+@button-primary__border: 1px solid @theme-color-g;
+
+/*curved edges*/
+@button__border-radius: 5px;
+
+
+& when (@media-common = true) {
+	.header{
+		.logo{
+			float: right;
+		}
+		.block-search{
+			float: left;
+			padding-left: 0;
+		}
+		.minicart-wrapper{
+			float: left;
+		}
+	}
+	.product-item{
+		.tocart{
+			border-radius: @button__border-radius;
+		}
+	}
+	.regular{
+		.slick-slide{
+			li{
+				text-align: center;
+			}
+			img{
+				display: inline-block;
+			}
+		} 
+	}
+}

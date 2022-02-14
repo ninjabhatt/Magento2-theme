@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <move element="logo" destination="header-wrapper" after="top.search" />
+        <move element="top.search" destination="header-wrapper" before="minicart" />
+        <referenceBlock name="main.content">
+            <block class="Magento\Framework\View\Element\Template"
+                name="rh-slick-slider"
+                template="Magento_Theme::slider.phtml" />
+        </referenceBlock>
+    </body>
+</page>
